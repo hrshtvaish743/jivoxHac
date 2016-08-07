@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html ng-app="jivoxDataVisualization">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title><%=title%></title>
+    <!-- Bootstrap 3.3.6 -->
+    <link rel="stylesheet" href="/includes/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="/stylesheets/AdminLTE.min.css">
+    <link rel="stylesheet" href="/stylesheets/_all-skins.min.css">
+
+    <link rel="stylesheet" href="/stylesheets/styles.css" media="screen" title="no title" charset="utf-8">
+  <link href="/stylesheets/bootstrap-glyphicons.css" rel="stylesheet">
+  </head>
+  <body class="hold-transition skin-blue sidebar-mini" style="background-color:#e6e6ff">
+  <div class="wrapper" style="<%=backgroundImage%>">
+
+    <header class="main-header">
+      <!-- Logo -->
+      <a href="#/" class="logo">
+        <span class="logo-lg"><b>ChatView</b></span>
+      </a>
+      <!-- Header Navbar: style can be found in header.less -->
+      <nav class="navbar navbar-static-top">
+        <div class="nav-collapse collapse navbar-responsive-collapse">
+        				 <ul class="nav navbar-nav">
+        					 <li class="active">
+        						 <a href="#/">Dashboard</a>
+        					 </li>
+        					 <li >
+        						 <a href="#/contact">Contact US</a>
+        					 </li>
+
+        				 </ul><!-- end nav -->
+      </nav>
+    </header>
+
+
+    <!-- Content Wrapper. Contains page content -->
+
+      <!-- Main content -->
+      <section class="content" style="min-height: 520px;">
+        <!-- Small boxes (Stat box) -->
+              <!-- /.row -->
+        <!-- Main row -->
+        <div ng-view></div>
+        <!-- /.row (main row) -->
+
+      </section>
+      <!-- /.content -->
+    </div>
+
+    <!-- Control Sidebar -->
+    <!-- /.control-sidebar -->
+    <!-- Add the sidebar's background. This div must be placed
+         immediately after the control sidebar -->
+    <div class="control-sidebar-bg"></div>
+  </div>
+  <footer>
+  		<div class="container">
+  			<div class="row">
+  				<div class="col-sm-2">
+  				<h6>Copyright &copy; 2016 ChartView</h6>
+  				</div><!-- end col-sm-2 -->
+
+  				<div class="col-sm-4">
+  					<h6>About Us</h6>
+  					<p>Our website provides useful analytics for any file.The information required could be filtered according to requirement.</p>
+  				</div><!-- end col-sm-4 -->
+
+  				<div class="col-sm-2">
+  					<h6>Navigation</h6>
+  					<ul class="unstyled">
+  						<li><a href="#/">Dashboard</a></li>
+  						<li><a href="#/contact">Contact</a></li>
+  					</ul>
+  				</div><!-- end col-sm-2 -->
+
+  				<div class="col-sm-2">
+  					<h6>Follow Us</h6>
+  					<ul class="unstyled">
+  						<li><a href="http://twitter.com" target="_blank">Twitter</a></li>
+  						<li><a href="http://facebook.com" target="_blank">Facebook</a></li>
+  						<li><a href="http://plus.google.com" target="_blank">Google Plus</a></li>
+  					</ul>
+  				</div><!-- end col-sm-2 -->
+
+  				<div class="col-sm-2">
+  					<h6>Coded with <span class="glyphicon glyphicon-heart"></span> by Ghulam, Abhipreet and Rahil</h6>
+  				</div><!-- end col-sm-2 -->
+  			</div><!-- end row -->
+  		</div><!-- end container -->
+  	</footer>
+
+  <!-- ./wrapper -->
+  <!-- Bootstrap 3.3.6 -->
+  <script src='includes/js/jquery-1.8.2.min.js'></script>
+
+
+
+  <script src="includes/js/bootstrap.min.js"></script>
+  <script src='includes/js/angular.min.js'></script>
+  <script src='includes/js/angular-route.min.js'></script>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.0.1/ui-bootstrap-tpls.min.js'></script>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.0.1/ui-bootstrap.min.js'></script>
+  <script src='includes/js/d3.min.js'></script>
+  <script src='includes/js/d3.tip.v0.6.3.js'></script>
+  <script src='javascripts/app.js'></script>
+  <script src='javascripts/mainController.js'></script>
+  <script src='routeProvider.js'></script>
+  </body>
+  <!-- <body>
+      <div ng-view></div>
+  </body> -->
+</html>

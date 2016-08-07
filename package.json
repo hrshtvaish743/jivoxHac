@@ -1,0 +1,31 @@
+{
+  "name": "jivoxDataVisualization",
+  "description":"Data Visualization of Census Data",
+  "version": "0.0.1",
+  "keywords": [
+    "Data",
+    "Visualization",
+    "Graph",
+    "filter",
+    "Analytics"
+  ],
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "test":"mocha"
+  },
+  "contributors":[
+    "Rahil Ahmad",
+    "Abhipreet Panda",
+    "Ghulam Rabbani"
+  ],
+  "dependencies": {
+    "body-parser": "~1.15.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.2.0",
+    "ejs": "^2.5.1",
+    "express": "~4.13.4",
+    "morgan": "~1.7.0",
+    "serve-favicon": "~2.3.0"
+  }
+}

@@ -1,0 +1,76 @@
+<div class="row">
+  <!-- Left col -->
+  <section class="col-sm-6 connectedSortable" style="background:rgba(230, 230, 255, 0.28);margin-left:350px;padding-left:10px;padding-right:50px;">
+    <!-- <button type="button" name="button" class="btn btn-primary">uploadFile</button> -->
+    <div style="margin-top:30px">
+      <h3 style="margin-left:280px;margin-bottom:25px;">Use Filter</h3>
+      <div style="margin-bottom:10px;margin-left:120px;display:iniline;">
+        <label for="sel1">Select Indicator Name</label>
+        <select class="form-control" id="sel1"  ng-model="selectedOption1" ng-options="option.name for option in options1">
+        </select>
+      </div>
+      <div style="margin-bottom:10px;margin-left:120px;display:iniline;">
+        <label for="sel1">Select Start Date</label>
+        <select class="form-control" id="sel2"  ng-model="selectedOption2" ng-options="option.name for option in options2" ng-disabled="selectedOption1.value=='oilSeeds' || selectedOption1.value=='foodGrains'">
+        </select>
+    </div>
+    <div style="margin-bottom:10px;margin-left:120px;display:iniline;">
+      <label for="sel1">Select End Date</label>
+      <select class="form-control" id="sel3"  ng-model="selectedOption3" ng-options="option.name for option in options3" ng-disabled="selectedOption1.value=='oilSeeds' || selectedOption1.value=='foodGrains'">
+      </select>
+    </div>
+    <form>
+      <input type="submit" name="name" value="GetData" class="btn btn-success" ng-click="getBarChartGraph('#myGraph')" style="margin-bottom:10px;margin-left:120px;display:iniline;">
+    </form>
+  </section>
+
+
+  <!-- /.Left col -->
+  <!-- right col (We are only adding the ID to make the widgets sortable)-->
+  <section class="col-lg-10 connectedSortable" style="margin-top:20px;margin-left:70px;">
+
+    <!-- solid sales graph -->
+    <div class="box box-solid" style="margin-left:30px;overflow:auto;background-color:rgba(230, 230, 255, 0.28)">
+      <div class="box-header">
+        <i class="fa fa-th"></i>
+
+        <h3 class="box-title">Bar | Stacked chart Graph</h3>
+
+      </div>
+      <div class="box-body border-radius-none" >
+        <div id="myGraph" style="text-align:center"></div>
+      </div>
+    </div>
+
+  </section>
+  <section class="col-lg-10 connectedSortable" style="margin-top:20px;margin-left:70px">
+
+    <!-- solid sales graph -->
+    <div class="box box-solid " style="margin-left:30px;overflow:auto;background-color:rgba(230, 230, 255, 0.28)">
+      <div class="box-header">
+        <i class="fa fa-th"></i>
+
+        <h3 class="box-title">Pie chart Graph</h3>
+
+      </div>
+      <div class="box-body border-radius-none" >
+        <div id="pieChart" style="text-align:center"></div>
+      </div>
+    </div>
+  </section>
+  <section class="col-lg-10 connectedSortable" style="margin-top:20px;margin-left:70px;">
+    <!-- solid sales graph -->
+    <div class="box box-solid" style="margin-left:30px;overflow:auto;background-color:rgba(230, 230, 255, 0.28)">
+      <div class="box-header">
+        <i class="fa fa-th"></i>
+
+        <h3 class="box-title">Line chart Graph</h3>
+
+      </div>
+      <div class="box-body border-radius-none" >
+          <div id="lineChart" style="text-align:center"></div>
+      </div>
+    </div>
+  </section>
+  <!-- right col -->
+</div>
